@@ -5,13 +5,7 @@ public class Triangle extends Shape{
     Point b;
     Point c;
     
-    //Colour cl;
-    /**
-     * Конструктор треугольника
-     * @param x - точка в двумерном пространстве а
-     * @param y - точка в двумерном пространстве b
-     * @param z - точка в двумерном пространстве c
-     */
+
     public Triangle(Point x, Point y, Point z, Colour clr) {
         a=x;
         b=y;
@@ -25,7 +19,6 @@ public class Triangle extends Shape{
         this.cl=cl;
     }
     public double area(){
-        // формула Герона
         double p = 0;
         p=0.5*(Point.distance(a, b) + Point.distance(b, c) + Point.distance(a, c));
         return Math.sqrt(p*(p-Point.distance(a, c))*(p-Point.distance(a, b))*(p-Point.distance(b, c)));

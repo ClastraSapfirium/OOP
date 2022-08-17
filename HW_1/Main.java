@@ -1,5 +1,6 @@
 package HW_1;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -16,7 +17,7 @@ public class Main {
         Triangle tr1=new Triangle(a, b, c, Colour.MAGENTA);
         Square sq1 = new Square(b,5,Colour.BLACK);
         Circle crl1 = new Circle(c,15,Colour.AQUA);
-        List<Shape> ls = List.of(tr1,crl1,sq1);
+        List<Shape> ls = Arrays.asList(tr1,crl1,sq1);
         System.out.println("Набор представлен следующими фигурами: " + "\n" + ls);
         System.out.println("Максимальная площадь: " + Math.round(maxSquare(ls)));
         System.out.println(maxFigure(ls));
