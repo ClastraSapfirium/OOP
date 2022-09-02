@@ -6,7 +6,6 @@ import java.util.List;
 
 public class PhoneBook {
     private List<Contact> ls = new ArrayList<>();
-
     
     public List<Contact> getLs(){
         return ls;

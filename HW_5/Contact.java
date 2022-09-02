@@ -7,15 +7,12 @@ public class Contact{
     public String getFullNm() {
         return fullNm;
     }
-    
     public void setFullNm(String fullNm) {
         this.fullNm = fullNm;
     }
-
     public String getPhone() {
         return phone;
     }
-
     public void setPhone(String phone) {
         this.phone = phone;
     }
